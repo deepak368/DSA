@@ -11,10 +11,10 @@ def combination_sum(ind,arr,target,ans,ds):
         combination_sum(i+1,arr,target - arr[i],ans,ds)
         ds.pop()
 
-arr = [1,1,2,2]
+arr = [10,1,2,7,6,1,5]
 arr.sort()
 ds = []
 ans = []
-target = 4
+target = 8
 combination_sum(0, arr, target, ans, ds)
 print(ans)
